@@ -11,7 +11,7 @@ for i in range(1, n):
             if n % (i + j) == 0:
                 result.append(f'{i}{j}')
 
-print(result)
+print(*result)
 
 result_string = str(result).translate({ord(i): None for i in ", '[]"})
 print(result_string)
